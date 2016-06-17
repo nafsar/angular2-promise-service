@@ -1,0 +1,15 @@
+<div>{{title}}</div>
+      <table class="lstdt">
+            <tr>
+                  <th class="row-ID">Item</th>
+                  <th class="row-name">Price</th>
+            </tr>
+            
+            <tbody *ngFor="let value of values">
+                  <tr>
+                        <td>{{value.name}}:</td>
+                        <td>{{value.payed | currency:'USD':true}}</td>
+                  </tr>
+            </tbody>
+            
+      </table>
