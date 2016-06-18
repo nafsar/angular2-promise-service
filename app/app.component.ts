@@ -1,11 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ValueService } from './value.service';
-
-export class Value {
-    name: string;
-    payed: number;
-
-}
+import {Value} from './value';
 
 @Component({
     selector: 'value-app',
@@ -14,7 +9,7 @@ export class Value {
 })
 export class AppComponent implements OnInit {
     values: Value[];
-    title = "AngularJS 2 (promise & service)"
+    title = "AngularJS 2 (promise and service)"
 
     constructor(private valueService: ValueService) { }
 

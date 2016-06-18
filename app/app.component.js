@@ -10,13 +10,10 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 const core_1 = require('@angular/core');
 const value_service_1 = require('./value.service');
-class Value {
-}
-exports.Value = Value;
 let AppComponent = class AppComponent {
     constructor(valueService) {
         this.valueService = valueService;
-        this.title = "AngularJS 2 (promise & service)";
+        this.title = "AngularJS 2 (promise and service)";
     }
     ngOnInit() {
         this.valueService.getValues().then(values => this.values = values);
