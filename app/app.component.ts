@@ -9,9 +9,12 @@ import {Value} from './value';
 })
 export class AppComponent implements OnInit {
     values: Value[];
-    title = "AngularJS 2 (promise and service)"
+    title : string;
 
-    constructor(private valueService: ValueService) { }
+    constructor(private valueService: ValueService) {
+        this.title = "AngularJS version 2 build";
+        
+    }
 
     ngOnInit() {
         this.valueService.getValues().then(values => this.values = values);
